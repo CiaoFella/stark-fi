@@ -1,15 +1,13 @@
-<link rel="stylesheet" href="https://netlify.app/style.css"/>
-
 <script>
-function loadMainScript() {
-  const netlifyBaseUrl = 'https://url.netlify.app/';
-  const localhostBaseUrl = 'http://localhost:1235/';
+function loadHomeScript() {
+  const netlifyBaseUrl = 'https://stark-fi.netlify.app/';
+  const localhostBaseUrl = 'http://localhost:3456/';
 
   // URLs for the scripts and stylesheets
-  const mainScriptUrl = `${localhostBaseUrl}main.js`;
-  const fallbackMainScriptUrl = `${netlifyBaseUrl}main.js`;
-  const mainStyleUrl = `${localhostBaseUrl}style.css`;
-  const fallbackMainStyleUrl = `${netlifyBaseUrl}style.css`;
+  const mainScriptUrl = `${localhostBaseUrl}/pages/home/home.js`;
+  const fallbackMainScriptUrl = `${netlifyBaseUrl}/pages/home/home.js`;
+  const mainStyleUrl = `${localhostBaseUrl}/pages/home/home.css`;
+  const fallbackMainStyleUrl = `${netlifyBaseUrl}/pages/home/home.css`;
 
   // Function to check if a URL is reachable
   function isUrlReachable(url) {
@@ -56,5 +54,5 @@ function loadMainScript() {
 }
 
 // Call the function to load the scripts and styles
-loadMainScript();
+loadHomeScript();
 </script>
