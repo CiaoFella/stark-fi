@@ -3,6 +3,7 @@ import { gsap, ScrollTrigger } from "../../vendor";
 (function () {
   function init() {
     console.log("Home page animations initialized");
+    console.log("test");
     animateText();
   }
 
